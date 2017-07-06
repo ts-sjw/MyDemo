@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.myapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.example.administrator.myapp.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--阿里热更新部分-->
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="24535269-1" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="e3637b19d4ffd1fd40856f24133f670f" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCJ75fIIV+8LBcQMkSjT0TsDSZENCRnUITzQbyXvxkCofnFPrC1DZFaSj9RLzJSUOclJ87+in45Likq+utjExVan6PqM7gy3vafBiB1CN/kJvYwl8YxQsMYFQ0nXJLFk9B1VMkm9dnJIQZeDH+Nl7S5w4wjyFRutx/80ugzQUffT8R3tfaQszK6v1KBybPc/Aq6kAphM1jUTATcuDwgmNpFbGPib4SmQMb8ZslY4FfQtiDhuKzCwf+Ti/Gnt748B7UQHXu7aO1kN59m47CyyeRY1zCD/FDAZ3qiwXcw+3euvfXZjI0IrO/u0atwYKg24KjW4nXMtCpSA7cwyaAe/RODAgMBAAECggEAfkg8TZ1AaKZ09v8Ol/UaxIHFZuvV6EBvd8XXQ5ZQ73gbk9mxLhEd4evXzBvJllM7S2kGuUNSDEeWqSLQHgR6qF0/VEvFd81pPG3/iSZ21ApXmmVZrf/RXVrokADQ3tJVJxZYkrLCkMELc089+APMEcZVpuzhX/uH7Y+pxkMd6fNkmFSHDcCJpeURhy5JaPg0gfEWyzqTVhFBmMW6QpjMg/U+poCZiWTYpk5rTVd3owx021I1sNrKNO47+zw4nYExqU4AT4gTwYBmOfpKtQP5mGs5OdzOSqLwvDmPhRuvoHtgTS/74eLJFY31Xx9NuCq3EVyoWvWgJKgSfqlNZWDYAQKBgQDJwzEYfe90x5IGe7+Kuna2KuHvO3m3lPVvAgEc5zEmy+OFjiliTNQ48ByAll1TAGo6WxvYLzKciZ+TLYmUx9qq0F8p/ch/14exK9TMtTuuZisDOruK+fIdqpKOSvKUQAR7yyn2uNSsXI1FuxWU3c65BwNZoyJyGLKI9g3IE3L9IQKBgQCvBALA+2KRI7hTEjEjcBCa5qDBu9ZxzKFw8pPQrpscErewMvaI+tA3Kkwe3LbhVqC44/ilDLs8MjufbT4wK7QBvTgQ5d5DdNgsyXXRFWLeCS4U0zG4FxN9DvC8qt4zmAwTe63HQEkhVYxNwk/vnNKoJhOQzDBkarUGMklgpv14IwKBgGC7mcVRU8YcjNFY8UuU/Kd4RdyKGmA/JbD0OA5gdbtRE6OLtiGwDivCSxgHf3T1BPk3h1ENx+kvPne05HqVmyw8PPQH/eH1NtRl3F/NIHEMAOFKfnIyRbedeSiJnGYhj0S+8j6c/TIqKX1eJgm6kos5ZozKXxBu8OIjfhYH5SChAoGAeOiwblo9cj/XK6y5vd3B2wHRtYXrVJsmPT2Y2OaHyhE0Tconf+KmzjWuePPKdErApnr4YC43fBLIFhAGkojexwTOIv5rWvbyEZ7sghHgR7zX1RNCmgd3M0KLFgyFjedREHS1TZ4f56OOVnoTd1pEPl5vze0C0ZzWiv1arCcxnTkCgYAj2E+JgAJzlbndJy0NWc+O+LBIVH3cw+5HGmvzZcTbWaqRZKA7cSkXEAmNTh4ZNZLiTTrQuo3a5P8zjioxqJn9J4a/Ulo13jtQcc3qcclt5PgzuDrEwVhAWTB3mnY0Af4wn5B6GSL5ZAmHJkHb996T+plzasuex3VnAWifCJOIRw==" />
+        <!--阿里热更新部分-->
+        <activity android:name="com.example.administrator.myapp.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.administrator.myapp.StepViewDemo.StepViewDemoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.example.administrator.myapp.RequestDemo.MyRequestActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.example.administrator.myapp.alibaba.sophix.AliHotFixActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+    </application>
+
+</manifest>
