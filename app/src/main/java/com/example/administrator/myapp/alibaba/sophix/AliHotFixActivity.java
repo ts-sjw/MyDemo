@@ -25,6 +25,7 @@ public class AliHotFixActivity extends AppCompatActivity implements MyApplicatio
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alihotfix);
+        SophixManager.getInstance().queryAndLoadNewPatch();
         mStatusTv = (TextView) findViewById(R.id.tv_status);
         MyApplication myApplication=(MyApplication)getApplication();
         myApplication.msgDisplayListener=this;
@@ -44,7 +45,7 @@ public class AliHotFixActivity extends AppCompatActivity implements MyApplicatio
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_download:
-                SophixManager.getInstance().queryAndLoadNewPatch();
+//                SophixManager.getInstance().queryAndLoadNewPatch();
                 break;
             case R.id.btn_clean_patch:
                 SophixManager.getInstance().cleanPatches();
